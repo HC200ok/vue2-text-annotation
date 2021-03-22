@@ -44,7 +44,7 @@ npm install --save vue-sequence-labeling-box
 
 # Demo
 
-[Try!](https://codesandbox.io/s/vue-template-kgm6v)
+[Try!](https://codesandbox.io/s/stoic-tesla-yt6cc)
 
 ## ES6 Modules
 
