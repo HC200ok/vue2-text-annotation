@@ -1,11 +1,21 @@
 {
-  "name": "sequence-labeling-box",
+  "name": "vue-sequence-labeling-box",
+  "description": "A component for sequence labeling developed via Vue2",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "HC200ok",
+  "license": "MIT",
+  "main": "dist/vue-sequence-labeling-box.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-package": "vue-cli-service build --target lib --name vue-sequence-labeling-box ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
