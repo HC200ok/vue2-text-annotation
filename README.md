@@ -15,31 +15,32 @@
 ```
 
 <img src="down-arrow.png" width="50px"/><br/>
-<img src="demo.gif" width="850px"/><br/>
+<img src="demo.gif" width="650px"/><br/>
 <img src="down-arrow.png" width="50px"/><br/>
 
-````javascript
+```javascript
 // latest annotations:
 [
-    {
-        "word": "James",
-        "label": "name"
-    },
-    {
-        "word": "basketball",
-        "label": "sports"
-    },
-    {
-        "word": "🏀 ",
-        "label": "emoji"
-    }
-]
+  {
+    word: "James",
+    label: "name",
+  },
+  {
+    word: "basketball",
+    label: "sports",
+  },
+  {
+    word: "🏀 ",
+    label: "emoji",
+  },
+];
+```
 
 # Installation
 
 ```bash
 npm install --save vue-sequence-labeling-box
-````
+```
 
 # Demo
 
@@ -57,43 +58,20 @@ import sequenceLabelingBox from "vue-sequence-labeling-box";
 
 # Props API
 
-| Props     | Description                            | Type           | Must Required | Default   |
-| --------- | -------------------------------------- | -------------- | ------------- | --------- |
-| v-model   | [{ "word": "James", "label": "name" }] | annotation[]   | yes           | []        |
-| text      | text                                   | String         | yes           |           |
-| color     | theme color                            | String         | no            | '#577eba' |
-| maxHeight | max height of sequence labeling box    | String or null | no            | null      |
+| Props     | Description                               | Type           | Must Required | Default   |
+| --------- | ----------------------------------------- | -------------- | ------------- | --------- |
+| v-model   | [{ "word": "James", "label": "name" },{ "word": "basketball", "label": "sports" },...] | annotation[]   | yes           | []        |
+| text      | text                                      | String         | yes           |           |
+| color     | theme color                               | String         | no            | '#577eba' |
+| maxHeight | max height of sequence labeling box       | String or null | no            | null      |
 
 
-```
-## Project setup
-```
 
+```bash
+# install dependencies
 npm install
-
-```
-
-### Compiles and hot-reloads for development
-```
-
+# compiles and hot-reloads for development
 npm run serve
-
-```
-
-### Compiles and minifies for production
-```
-
+# compiles and minifies for production
 npm run build
-
-```
-
-### Lints and fixes files
-```
-
-npm run lint
-
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
