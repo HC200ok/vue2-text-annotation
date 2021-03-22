@@ -36,17 +36,17 @@
 ];
 ```
 
-# Installation
+### Installation
 
 ```bash
 npm install --save vue-sequence-labeling-box
 ```
 
-# Demo
+### Demo
 
 [Try!](https://codesandbox.io/s/stoic-tesla-yt6cc)
 
-## ES6 Modules
+### ES6 Modules
 
 ```js
 import sequenceLabelingBox from "vue-sequence-labeling-box";
@@ -56,7 +56,7 @@ import sequenceLabelingBox from "vue-sequence-labeling-box";
 <sequence-labeling-box v-model="annotations" :text="text" />
 ```
 
-# Props API
+### Props API
 
 | Props     | Description                               | Type           | Must Required | Default   |
 | --------- | ----------------------------------------- | -------------- | ------------- | --------- |
@@ -64,7 +64,6 @@ import sequenceLabelingBox from "vue-sequence-labeling-box";
 | text      | text                                      | String         | yes           |           |
 | color     | theme color                               | String         | no            | '#577eba' |
 | maxHeight | max height of sequence labeling box       | String or null | no            | null      |
-
 
 
 ```bash
