@@ -1,6 +1,6 @@
 # vue-sequence-labeling-box
 
-> A component for sequence labeling developed via Vue2
+> A vue2 component for sequence labeling
 
 ### Concept
 
