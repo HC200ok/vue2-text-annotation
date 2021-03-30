@@ -1,15 +1,14 @@
 {
   "name": "vue-sequence-labeling-box",
   "description": "A component for sequence labeling developed via Vue2",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "author": "HC200ok",
   "license": "MIT",
   "main": "dist/vue-sequence-labeling-box.common.js",
   "files": [
-    "dist/*",
-    "src/*",
-    "*.json"
+    "dist",
+    "src"
   ],
   "repository": {
     "type": "git",
