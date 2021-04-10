@@ -1,6 +1,6 @@
 <template>
   <div
-    class="suquence_labeling_box"
+    class="text-annotation-box"
     :class="{ scroll: maxHeight }"
     v-on:mouseup="onMouseUp"
     :style="{ maxHeight: maxHeight }"
@@ -46,7 +46,7 @@ import { getContrastColor } from "@/utils";
     LabelingInput,
   },
 })
-export default class SequnceLabelingBox extends Vue {
+export default class textAnnotationBox extends Vue {
   @Prop({ required: true }) readonly text!: string;
   @Prop({ default: [] }) readonly value!: Array<Annotation>;
   @Prop({ default: "#577eba" }) readonly color!: string;
@@ -239,7 +239,7 @@ export default class SequnceLabelingBox extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.suquence_labeling_box {
+.text-annotation-box {
   box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
   line-height: 2;
   padding: 10px 10px 10px 7px;

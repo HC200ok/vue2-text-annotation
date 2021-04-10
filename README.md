@@ -1,6 +1,6 @@
-# vue-sequence-labeling-box
+# vue-text-annotation-box
 
-> A vue2 component for sequence labeling
+> A vue2 component for manual text annotation
 
 ### Concept
 
@@ -39,7 +39,7 @@
 ### Installation
 
 ```bash
-npm install --save vue-sequence-labeling-box
+npm install --save vue-text-annotation-box
 ```
 
 ### Demo
@@ -49,11 +49,11 @@ npm install --save vue-sequence-labeling-box
 ### ES6 Modules
 
 ```js
-import sequenceLabelingBox from "vue-sequence-labeling-box";
+import textAnnotationBox from "vue-text-annotation-box";
 ```
 
 ```html
-<sequence-labeling-box v-model="annotations" :text="text" />
+<text-annotation-box v-model="annotations" :text="text" />
 ```
 
 ### Props API
@@ -63,7 +63,7 @@ import sequenceLabelingBox from "vue-sequence-labeling-box";
 | v-model   | [{ "word": "James", "label": "name" },{ "word": "basketball", "label": "sports" },...] | annotation[]   | yes           | []        |
 | text      | text                                      | String         | yes           |           |
 | color     | theme color                               | String         | no            | '#577eba' |
-| maxHeight | max height of sequence labeling box       | String or null | no            | null      |
+| maxHeight | max height of text annotation box       | String or null | no            | null      |
 
 
 ```bash

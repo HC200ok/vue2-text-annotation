@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <sequence-labeling-box v-model="annotations" :text="text" />
+    <text-annotation-box v-model="annotations" :text="text" />
     <div class="annotations">
       {{ annotations }}
     </div>
@@ -9,11 +9,11 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import SequenceLabelingBox from "./components/SequenceLabelingBox.vue";
+import TextAnnotationBox from "./components/TextAnnotationBox.vue";
 
 @Component({
   components: {
-    SequenceLabelingBox,
+    TextAnnotationBox,
   },
 })
 export default class App extends Vue {

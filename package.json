@@ -1,33 +1,33 @@
 {
-  "name": "vue-sequence-labeling-box",
-  "description": "A component for sequence labeling developed via Vue2",
+  "name": "vue-text-annotation-box",
+  "description": "A vue2 component for manual text annotation",
   "version": "0.1.3",
   "private": false,
   "author": "HC200ok",
   "license": "MIT",
-  "main": "dist/vue-sequence-labeling-box.common.js",
+  "main": "dist/vue-text-annotation-box.common.js",
   "files": [
     "dist",
     "src"
   ],
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:HC200ok/vue-sequence-labeling-box.git"
+    "url": "git+git@github.com:HC200ok/vue-text-annotation-box.git"
   },
   "keywords": [
     "vue2",
-    "vue-sequence-labeling-box",
-    "sequence labeling",
+    "vue-text-annotation-box",
+    "text annotation",
     "labeling",
     "vue-component",
     "annotation"
   ],
-  "homepage": "https://github.com/HC200ok/vue-sequence-labeling-box",
+  "homepage": "https://github.com/HC200ok/vue-text-annotation-box",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-package": "vue-cli-service build --target lib --name vue-sequence-labeling-box ./src/index.js"
+    "build-package": "vue-cli-service build --target lib --name vue-text-annotation-box ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

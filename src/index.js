@@ -1,3 +1,3 @@
-import SequenceLabelingBox from "./components/SequenceLabelingBox.vue";
+import TextAnnotationBox from "./components/TextAnnotationBox.vue";
 
-export default SequenceLabelingBox;
+export default TextAnnotationBox;
