@@ -30,7 +30,7 @@
     label: "sports",
   },
   {
-    word: "🏀 ",
+    word: "🏀",
     label: "emoji",
   },
 ];
@@ -58,7 +58,7 @@ import textAnnotationBox from "vue-text-annotation-box";
 
 ### Props API
 
-| Props     | Description                               | Type           | Must Required | Default   |
+| Props     | Description                               | Type           | Required | Default   |
 | --------- | ----------------------------------------- | -------------- | ------------- | --------- |
 | v-model   | [{ "word": "James", "label": "name" },{ "word": "basketball", "label": "sports" },...] | annotation[]   | yes           | []        |
 | text      | text                                      | String         | yes           |           |
