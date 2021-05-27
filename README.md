@@ -43,7 +43,7 @@ import dataMasking from "vue-manual-data-masking";
 
 | Property | Description | Type | Required | Default |
 | -------- | ----------- | ---- | -------- | ------- |
-| v-model(1) | sensitive data been masked<br>e.g. <br>[{ content: "080080080", category: "phone number", start: 0, end: 5 }] | Array<Masked> | no | [] |
+| v-model | sensitive data been masked<br>e.g. <br>[{ content: "080080080", category: "phone number", start: 0, end: 5 }] | Array<Masked> | no | [] |
 | text | text | String | yes | |
 | maskingTextColor | color of masking text | String | no |"#35495e" |
 | maskingBgColor | color of masking background | String | no | "#41b883"|
