@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-<img src="logo.jpeg"  wight="120" />
+<img src="logo.jpeg"  wight="100" />
 </p>
 
 <p align="center">
