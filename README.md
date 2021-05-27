@@ -58,8 +58,8 @@ import dataMasking from "vue-manual-data-masking";
 ```bash
 # install dependencies
 npm install
-# serve with hot reload at localhost:8080
-npm run dev
+# serve with hot reload at localhost:8888
+npm run serve
 # build for production with minification
 npm run build
 ```
