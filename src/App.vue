@@ -1,39 +1,34 @@
 <template>
   <div id="app">
-    <text-annotation-box v-model="annotations" :text="text" />
-    <div class="annotations">
-      {{ annotations }}
-    </div>
+    <data-masking v-model="dataMasked" :text="text" @afterMasking="afterMasking"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import TextAnnotationBox from "./components/TextAnnotationBox.vue";
+import DataMasking from "./components/DataMasking.vue";
 
 @Component({
   components: {
-    TextAnnotationBox,
+    DataMasking,
   },
 })
 export default class App extends Vue {
   text =
-    "James is a basketball player, he likes eating hamburger since he was a child, now he is a basketball 🏀  star.";
-  annotations = [
-    {
-      word: "James",
-      label: "name",
-    },
+    "James lives at 4 Chome-2-8 Shibakoen, his phone number is 080080080";
+
+  dataMasked = [
     // {
-    //     "word": "basketball",
-    //     "label": "sports"
+    //   content: "080080080",
+    //   category: "phone number",
+    //   start: 58,
+    //   end: 67,
     // },
-    // {
-    //     "word": "hamburger",
-    //     "label": "food"
-    // }
   ];
+  textAfterMasking = this.text
+
+  afterMasking(textAfterMasking: string) {
+    this.textAfterMasking = textAfterMasking
+  }
 }
 </script>
-
-<style lang="scss"></style>

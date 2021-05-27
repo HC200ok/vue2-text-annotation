@@ -1,33 +1,32 @@
 {
-  "name": "vue-text-annotation-box",
-  "description": "A vue2 component for manual text annotation",
+  "name": "vue-manual-data-masking",
+  "description": "A vue2 component for manual data masking",
   "version": "0.1.3",
   "private": false,
   "author": "HC200ok",
   "license": "MIT",
-  "main": "dist/vue-text-annotation-box.common.js",
+  "main": "dist/vue-manual-data-masking.common.js",
   "files": [
     "dist",
     "src"
   ],
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:HC200ok/vue-text-annotation-box.git"
+    "url": "git+git@github.com:HC200ok/vue-manual-data-masking.git"
   },
   "keywords": [
     "vue2",
-    "vue-text-annotation-box",
-    "text annotation",
-    "labeling",
-    "vue-component",
-    "annotation"
+    "vue-manual-data-masking",
+    "data-masking",
+    "manual-data-masking",
+    "vue-component"
   ],
-  "homepage": "https://github.com/HC200ok/vue-text-annotation-box",
+  "homepage": "https://github.com/HC200ok/vue-manual-data-masking",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-package": "vue-cli-service build --target lib --name vue-text-annotation-box ./src/index.js"
+    "build-package": "vue-cli-service build --target lib --name vue-manual-data-masking ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

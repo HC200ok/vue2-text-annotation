@@ -1,17 +1,13 @@
-export interface Annotation {
-  word: string;
-  label: string;
-}
-export interface Entity {
-  end_offset: number;
-  label: string;
-  start_offset: number;
-  word: string;
+export interface Masked {
+  content: string;
+  category: string;
+  start: number;
+  end: number;
 }
 export interface Chunk {
   type: string;
-  label?: string;
-  color?: string;
+  category?: string;
   content: string;
-  newline?: boolean;
+  start?: number;
+  end?: number;
 }

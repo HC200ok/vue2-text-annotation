@@ -1,3 +1,3 @@
-import TextAnnotationBox from "./components/TextAnnotationBox.vue";
+import DataMasking from "./components/DataMasking.vue";
 
-export default TextAnnotationBox;
+export default DataMasking;
