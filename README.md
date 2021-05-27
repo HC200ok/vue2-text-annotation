@@ -1,17 +1,18 @@
 <br>
+
 <p align="center">
-<img src="logo.jpeg"  wight="150" />
-</a>
+<img src="logo.jpeg"  wight="120" />
 </p>
 
-# vue-manual-data-masking
+<p align="center">
+vue-manual-data-masking
+</p>
 
 > Vue2 version of [easy-data-masking](https://github.com/HC200ok/easy-data-masking).
 
 ## Features
 
 ~~1. Configurable categories of sensitive data like swear word, person name, home address...~~
-
 1. Providing input for entering categories of sensitive data like swear word, person name, home address...
 2. Showing sensitive data been masked when mouse hover.
 3. Replacing sensitive data by using characters "●" and "\*".
