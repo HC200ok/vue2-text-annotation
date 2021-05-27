@@ -7,7 +7,7 @@
   >
     <!-- {{ chunks }} -->
     <template v-for="(item, index) in chunks">
-      <span v-if="item.type === 'text'" :key="index" v-html="item.content" />
+      <span v-if="item.type === 'text'" :key="index">{{item.content}}</span>
       <br v-if="item.type === 'wrap'" :key="index" />
       <data-masked
         v-if="item.type === 'masked'"
