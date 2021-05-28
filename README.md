@@ -13,7 +13,7 @@ vue-manual-data-masking
 ## Features
 
 ~~1. Configurable categories of sensitive data like swear word, person name, home address...~~
-1. Providing input to enter categories of sensitive data like swear word, person name, home address...
+1. Providing input (supporting enter keypress) to enter categories of sensitive data like swear word, person name, home address...
 2. Showing sensitive data been masked when mouse hover.
 3. Replacing sensitive data by using characters "●" and "\*".
 
