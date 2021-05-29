@@ -1,7 +1,7 @@
 {
   "name": "vue-manual-data-masking",
   "description": "A vue2 component for manual data masking",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": false,
   "author": "HC200ok",
   "license": "MIT",

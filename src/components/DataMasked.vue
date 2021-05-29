@@ -45,23 +45,24 @@ export default class DataMasked extends Vue {
   }
   &_word {
     float: left;
-    height: 1.3rem;
+    height: 1.3em;
+    line-height: 1.3;
     overflow: hidden;
     &_top,
     &_bottom {
+      height: 1.3em;
       text-align: center;
-      line-height: 1.3rem;
       display: block;
-      transition: margin-top 0.3s;
+      transition: margin-top .3s;
     }
     &:hover &_top {
-      margin-top: -20px;
+      margin-top: -1.3em;
     }
   }
   &_category {
     display: inline-block;
-    font-weight: bold;
-    height: 1.3rem;
+    font-weight: 700;
+    height: 1.3em;
     padding-left: 2px;
   }
   &_delete {
