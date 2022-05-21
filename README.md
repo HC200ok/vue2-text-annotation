@@ -43,11 +43,11 @@ import dataMasking from "vue-manual-data-masking";
 
 | Property | Description | Type | Required | Default |
 | -------- | ----------- | ---- | -------- | ------- |
-| v-model | sensitive data been masked<br>e.g. <br>[{ content: "080080080", category: "phone number", start: 0, end: 5 }] | Array<Masked> | yes | [] |
-| text | text | String | yes | |
-| maskingTextColor | color of masking text | String | no |"#35495e" |
-| maskingBgColor | color of masking background | String | no | "#41b883"|
-| maxHeight | max height of data masking container | Number or Null | no | null | |
+| v-model | Data been masked<br>e.g. <br>[{ content: "080080080", category: "phone number", start: 0, end: 5 }] | Array<Masked> | true | [] |
+| text | text | String | true | |
+| maskingTextColor | color of masking text | String | false |"#35495e" |
+| maskingBgColor | color of masking background | String | false | "#41b883"|
+| maxHeight | max height of data masking container | Number or Null | false | null | |
 
 ## Events
 
