@@ -18,11 +18,11 @@ vue-manual-data-masking
 
 ## Demo
 Before data masking: <br/>
-<img src="./images/before-masking.png"  wight="50%" />
+<img src="./images/before-masking.png"  wight="150" /> <br/> <br/>
 When data masking: <br/>
-<img src="demo.gif"  wight="50%" />
+<img src="demo.gif"  wight="150" /> <br/><br/>
 After data masking: <br/>
-<img src="./images/after-masking.png"  wight="50%" />
+<img src="./images/after-masking.png"  wight="150" />
 
 [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-manual-data-masking-yt6cc?file=/src/App.vue)
 
