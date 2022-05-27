@@ -17,8 +17,12 @@ vue-manual-data-masking
 3. Hide sensitive data by using characters like "●" and "\*".
 
 ## Demo
-
-<img src="demo.gif"  wight="150" />
+Before data masking: <br/>
+<img src="./images/before-masking.png"  wight="50%" />
+When data masking: <br/>
+<img src="demo.gif"  wight="50%" />
+After data masking: <br/>
+<img src="./images/after-masking.png"  wight="50%" />
 
 [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-manual-data-masking-yt6cc?file=/src/App.vue)
 
