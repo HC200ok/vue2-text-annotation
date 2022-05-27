@@ -20,7 +20,7 @@ vue-manual-data-masking
 
 <img src="demo.gif"  wight="150" />
 
-[Try!](https://codesandbox.io/s/vue-manual-data-masking-yt6cc?file=/src/App.vue)
+[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-manual-data-masking-yt6cc?file=/src/App.vue)
 
 ## Installation
 

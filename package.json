@@ -1,14 +1,13 @@
 {
   "name": "vue-manual-data-masking",
   "description": "A vue2 component for manual data masking",
-  "version": "0.1.8",
+  "version": "0.1.14",
   "private": false,
   "author": "HC200ok",
   "license": "MIT",
   "main": "dist/vue-manual-data-masking.common.js",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "repository": {
     "type": "git",
