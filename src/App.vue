@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <data-masking v-model="dataMasked" :text="text" @afterMasking="afterMasking"/>
+    <data-masking
+      v-model="dataMasked"
+      :text="text"
+      @afterMasking="afterMasking"
+    />
   </div>
 </template>
 
@@ -14,8 +18,7 @@ import DataMasking from "./components/DataMasking.vue";
   },
 })
 export default class App extends Vue {
-  text =
-    "James lives at 4 Chome-2-8 Shibakoen, his phone number is 080080080";
+  text = "James lives at 4 Chome-2-8 Shibakoen, his phone number is 080080080";
 
   dataMasked = [
     // {
@@ -25,10 +28,10 @@ export default class App extends Vue {
     //   end: 67,
     // },
   ];
-  textAfterMasking = this.text
+  textAfterMasking = this.text;
 
   afterMasking(textAfterMasking: string) {
-    this.textAfterMasking = textAfterMasking
+    this.textAfterMasking = textAfterMasking;
   }
 }
 </script>

@@ -7,7 +7,7 @@
   >
     <!-- {{ chunks }} -->
     <template v-for="(item, index) in chunks">
-      <span v-if="item.type === 'text'" :key="index">{{item.content}}</span>
+      <span v-if="item.type === 'text'" :key="index">{{ item.content }}</span>
       <br v-if="item.type === 'wrap'" :key="index" />
       <data-masked
         v-if="item.type === 'masked'"
@@ -218,7 +218,7 @@ export default class DataMasking extends Vue {
         start: this.selectingDataStartIndex,
         end: this.selectingDataStartIndex + this.selectingData.length,
       });
-    } 
+    }
     this.selectingData = null;
     this.selectingDataStartIndex = null;
   }

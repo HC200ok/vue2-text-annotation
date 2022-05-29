@@ -53,7 +53,7 @@ export default class DataMasked extends Vue {
       height: 1.3em;
       text-align: center;
       display: block;
-      transition: margin-top .3s;
+      transition: margin-top 0.3s;
     }
     &:hover &_top {
       margin-top: -1.3em;
