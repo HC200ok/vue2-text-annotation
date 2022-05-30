@@ -94,7 +94,7 @@ Data masking is used to label and hide sensitive data, create new text that hide
 ### Demo
 Before data masking: <br/>
 <img src="./images/before-masking.png"  wight="150" /> <br/> <br/>
-Data masking operation: <br/>
+Data masking: <br/>
 <img src="./images/data-masking.gif"  wight="150" /> <br/><br/>
 After data masking: <br/>
 <img src="./images/after-masking.png"  wight="150" />
