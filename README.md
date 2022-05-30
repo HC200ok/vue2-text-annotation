@@ -143,14 +143,14 @@ export default {
 
 | Property | Description | Type | Required | Default |
 | -------- | ----------- | ---- | -------- | ------- |
-| v-model | Bind to text annotations<br>e.g. <br>[{ content: "080080080", annotation: "phone number", start: 0, end: 5 }] | Annotation: <br>{<br>  content: string, <br>  annotation: string, <br>  start: number,<br>  end: number<br>} | true | [] |
+| v-model | Bind to text annotations<br>e.g. <br>[{ content: "080080080", annotation: "phone number", start: 0, end: 5 }] | Array<Annotation>: <br>{<br>  content: string, <br>  annotation: string, <br>  start: number,<br>  end: number<br>}[] | true | [] |
 | annotation-text-color | Font color of annotation entity | string | false |"#35495e" |
 | annotation-bg-color | Background color of annotation entity | string | false | "#41b883"|
 | data-masking | Set to `true` to start using data masking feature | boolean | false | false |
 | data-masking-charactor | Charactor in data masking entity| string | false | '●' |
-| maxHeight | Max height of data masking container | Number or Null | false | null | |
+| maxHeight | Max height of data masking container | number \ null | false | null | |
 | replace-charactor | Charactor be used to replace the sensitive data | string | false | '*" |
-| text | Text (Notice: please use `\n` in where you want to wrap a new line) | String | true | '' |
+| text | Text (Notice: please use `\n` in where you want to wrap a new line) | string | true | '' |
 
 
 
