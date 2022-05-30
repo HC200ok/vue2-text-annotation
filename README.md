@@ -89,7 +89,7 @@ export default {
 ```
 
 # 2. Data masking
-Data masking is used to label and hide sensitive data and create new text that hides (masks) sensitive information. 
+Data masking is used to label and hide sensitive data, create new text that hides (masks) sensitive information. 
 
 ### Demo
 Before data masking: <br/>
