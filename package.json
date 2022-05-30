@@ -1,7 +1,7 @@
 {
   "name": "vue2-text-annotation",
   "description": "A vue2 component for text annotation",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "author": "HC200ok",
   "license": "MIT",

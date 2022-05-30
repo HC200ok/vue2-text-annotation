@@ -4,12 +4,16 @@
       class="text-container"
       v-model="labeledData"
       :text="text"
-      :data-masking="false"
-      @afterDataMasking="afterMasking"
+      :data-masking="true"
+      @afterDataMasking="updateTextAfterDataMasking"
     />
-    <div class="annotations">
-      data set: {{ labeledData }}
-    </div>
+    <br />
+    labeled data: <br />
+    {{ labeledData }}
+    <br />
+    <br />
+    text after data masking:<br />
+    {{ textAfterMasking }}
   </div>
 </template>
 
@@ -19,7 +23,7 @@ import TextContainer from "./components/TextContainer.vue";
 
 @Component({
   components: {
-    TextContainer
+    TextContainer,
   },
 })
 export default class App extends Vue {
@@ -29,20 +33,16 @@ export default class App extends Vue {
   labeledData = [
     {
       content: "Vue.js",
-      category: "framework",
-      start:0,
-      end:6,
+      annotation: "framework",
+      start: 0,
+      end: 6,
     },
   ];
 
   textAfterMasking = this.text;
 
-  afterMasking(textAfterMasking: string): void {
+  updateTextAfterDataMasking(textAfterMasking: string): void {
     this.textAfterMasking = textAfterMasking;
   }
 }
 </script>
-
-<style>
-
-</style>

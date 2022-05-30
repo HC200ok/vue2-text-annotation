@@ -9,7 +9,7 @@
         id="input-dialog"
         class="input-dialog"
         autocomplete="off"
-        v-model="category"
+        v-model="annotation"
         ref="input"
         type="text"
         v-on:mouseup.stop
@@ -41,11 +41,11 @@ export default class InputDialog extends Vue {
   @Prop({ required: true }) align!: string;
   @Prop({ required: true }) inputDialogWidth!: number;
 
-  category = "";
+  annotation = "";
 
   @Emit()
   addAnnotation(): string {
-    return this.category;
+    return this.annotation;
   }
 }
 </script>

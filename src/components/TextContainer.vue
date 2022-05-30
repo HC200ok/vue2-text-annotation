@@ -54,7 +54,7 @@ export default class TextContainer extends Vue {
   @Prop({ default: "#41b883" }) readonly annotationBgColor!: string;
   @Prop({ default: false }) readonly dataMasking!: boolean;
   @Prop({ default: "●" }) readonly dataMaskingCharactor!: string;
-  @Prop({ default: "*" }) readonly textReplaceCharactor!: string;
+  @Prop({ default: "*" }) readonly replaceCharactor!: string;
   @Prop({ default: null }) readonly maxHeight!: string | null;
 
   textAnnotations: Array<Annotation> = [];
@@ -91,7 +91,7 @@ export default class TextContainer extends Vue {
     this.showInputDialog = !(newVal === "" || newVal === null);
   }
 
-  isTextIndent(index: number, isText = true): boolean {
+  isTextIndent(index: number): boolean {
     if (index === 0) return true;
     const previousChunk = this.chunks[index - 1];
     if (previousChunk.type === "wrap") {
@@ -105,7 +105,7 @@ export default class TextContainer extends Vue {
     textAnnotations.forEach((item) => {
       afterMasking =
         afterMasking.substr(0, item.start) +
-        this.textReplaceCharactor.repeat(item.content.length) +
+        this.replaceCharactor.repeat(item.content.length) +
         afterMasking.substr(item.start + item.content.length);
     });
     return afterMasking;
@@ -149,7 +149,7 @@ export default class TextContainer extends Vue {
         type: "annotation",
         content: piece,
         start: entity.start,
-        category: entity.category,
+        annotation: entity.annotation,
       });
     }
     // add the rest of text.
@@ -179,7 +179,10 @@ export default class TextContainer extends Vue {
     // if click on `ok` button, pass
     if (target.classList.contains("add-annotation-button")) return;
     // effective when mouseover on class `text-for-annotation`, expecially unavailable on `annotation` 
-    if (target.classList.contains("text-for-annotation") || target.classList.contains("text-annotation-container")) {
+    if (
+      target.classList.contains("text-for-annotation") ||
+      target.classList.contains("text-annotation-container")
+    ) {
       const selection = window.getSelection();
       if (selection !== null && selection.toString().length) {
         const range = selection.getRangeAt(0).cloneRange();
@@ -231,16 +234,16 @@ export default class TextContainer extends Vue {
     );
   }
 
-  addAnnotation(category: string): void {
+  addAnnotation(annotation: string): void {
     if (
-      category.length &&
+      annotation.length &&
       typeof this.selectingContent == "string" &&
       this.selectingContent.length &&
       this.selectingContentStartIndex !== null
     ) {
       this.textAnnotations = this.textAnnotations.concat({
         content: this.selectingContent,
-        category,
+        annotation,
         start: this.selectingContentStartIndex,
         end: this.selectingContentStartIndex + this.selectingContent.length,
       });

@@ -20,10 +20,10 @@
       </span>
     </span>
     <span
-      class="text-annotation__category"
+      class="text-annotation__annotation"
       :style="{ backgroundColor: annotationBgColor }"
     >
-      {{ textAnnotation.category }}
+      {{ textAnnotation.annotation }}
     </span>
     <button class="text-annotation__delete" @click="deleteAnnotation">x</button>
   </span>
@@ -75,7 +75,7 @@ export default class TextAnnotation extends Vue {
       }
     }
   }
-  &__category {
+  &__annotation {
     display: inline-block;
     font-weight: 700;
     height: 1.3em;
