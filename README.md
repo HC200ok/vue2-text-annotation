@@ -101,7 +101,7 @@ After data masking: <br/>
 
 [Online preview](https://x9gvs3.csb.app/)
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-manual-data-masking-yt6cc?file=/src/App.vue)
+[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/data-masking-x9gvs3?file=/src/App.vue)
 
 ### Usage
 ```js
@@ -146,7 +146,7 @@ export default {
 | v-model | Bind to text annotations<br>e.g. <br>[{ content: "080080080", annotation: "phone number", start: 0, end: 5 }] | Annotation: <br>{<br>  content: string, <br>  annotation: string, <br>  start: number,<br>  end: number<br>} | true | [] |
 | annotation-text-color | Font color of annotation entity | string | false |"#35495e" |
 | annotation-bg-color | Background color of annotation entity | string | false | "#41b883"|
-| data-masking | Set to `true` to start data masking mode | boolean | false | false |
+| data-masking | Set to `true` to start using data masking feature | boolean | false | false |
 | data-masking-charactor | Charactor in data masking entity| string | false | '●' |
 | maxHeight | Max height of data masking container | Number or Null | false | null | |
 | replace-charactor | Charactor be used to replace the sensitive data | string | false | '*" |
