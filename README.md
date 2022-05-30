@@ -22,7 +22,7 @@ npm install --save vue2-text-annotation
 1. Select or double click the content which you want to annotate, then an input dialog will pop up.
 2. Enter content of annotation.
 3. Click "ok" button or just press the enter key to annotate.
-4. If you want to remove an annoation, hover on annotation entity and click the delete button to remove.
+4. If you want to remove an annoation, hover on an annotation entity and click the delete button to remove.
 
 ### Demo
 
