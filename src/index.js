@@ -1,3 +1,3 @@
-import DataMasking from "./components/DataMasking.vue";
+import TextContainer from "./components/TextContainer.vue";
 
-export default DataMasking;
+export default TextContainer;

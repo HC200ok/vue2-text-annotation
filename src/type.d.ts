@@ -1,4 +1,4 @@
-export interface Masked {
+export interface Annotation {
   content: string;
   category: string;
   start: number;
