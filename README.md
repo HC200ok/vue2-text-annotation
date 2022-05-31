@@ -16,7 +16,11 @@ vue2-text-annotation is an easy-to-use component for text annotation and data ma
 npm install --save vue2-text-annotation
 ```
 
-# 1. Text annotation
+# Features
+1. [Text annotation](#text-annotation)
+2. [Data masking](#data-masking)
+
+# Text annotation
 
 ### Operation
 1. Select or double click the content which you want to annotate, then an input dialog will pop up.
@@ -88,7 +92,7 @@ export default {
 };
 ```
 
-# 2. Data masking
+# Data masking
 Data masking is used to label and hide sensitive data, create new text that hides (masks) sensitive information. 
 
 ### Demo
