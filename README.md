@@ -153,7 +153,7 @@ export default {
 | data-masking | Set to `true` to start using data masking feature | boolean | false | false |
 | data-masking-charactor | Charactor in data masking entity| string | false | '●' |
 | maxHeight | Max height of container | number \| null | false | null | |
-| replace-charactor | Charactor be used to replace the sensitive data | string | false | '*" |
+| replace-charactor | Charactor be used to replace the sensitive data | string | false | "*" |
 | text | Text (Notice: please use `\n` in where you want to wrap a new line) | string | true | '' |
 
 
