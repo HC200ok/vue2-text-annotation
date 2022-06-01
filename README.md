@@ -151,10 +151,10 @@ export default {
 | annotation-text-color | Font color of annotation entity | string | false |"#35495e" |
 | annotation-bg-color | Background color of annotation entity | string | false | "#41b883"|
 | data-masking | Set to `true` to start using data masking feature | boolean | false | false |
-| data-masking-charactor | Charactor in data masking entity| string | false | '●' |
-| maxHeight | Max height of container | number \| null | false | null | |
+| data-masking-charactor | Charactor in data masking entity| string | false | "●" |
+| maxHeight | Max height of container, you can scroll the content if the height of container is over maxHeight | number \| null | false | null | |
 | replace-charactor | Charactor be used to replace the sensitive data | string | false | "*" |
-| text | Text (Notice: please use `\n` in where you want to wrap a new line) | string | true | '' |
+| text | Text (Notice: please use `\n` in where you want to wrap a new line) | string | true | "" |
 
 
 
