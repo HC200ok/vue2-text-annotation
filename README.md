@@ -43,20 +43,20 @@ npm install --save vue2-text-annotation
   {
     content: "Vue.js",
     annotation: "framework",
-    start:0,
-    end:6,
+    start: 0,
+    end: 6,
   },
   {
     content: "Evan You",
     annotation: "name",
-    start:521,
-    end:529,
+    start: 521,
+    end: 529,
   },
   {
     content: "JavaScript",
     annotation: "language",
-    start:24,
-    end:34,
+    start: 24,
+    end: 34,
   }
 ]
 ```
